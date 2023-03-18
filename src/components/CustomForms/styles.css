@@ -1,0 +1,15 @@
+.form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form-grid > div {
+  flex: 1 1 calc(25% - 1rem);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
