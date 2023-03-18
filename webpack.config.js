@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const DotenvWebpack = require('dotenv-webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
@@ -20,6 +21,10 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      },
     ],
   },
   plugins: [
@@ -28,6 +33,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new DotenvWebpack(),
+    new MiniCssExtractPlugin(),
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
