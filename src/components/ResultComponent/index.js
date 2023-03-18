@@ -1,5 +1,6 @@
 // Result.js
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import {
   getStockTicker,
@@ -75,6 +76,18 @@ const Result = ({
       </div>
     </div>
   );
+};
+
+Result.propTypes = {
+  stockTicker: PropTypes.string,
+  days: PropTypes.number,
+  exitLevel: PropTypes.number,
+  combinedProfit: PropTypes.number,
+  costPerShares: PropTypes.number,
+  ror: PropTypes.number,
+  breakEven: PropTypes.number,
+  downsideProtection: PropTypes.number,
+  annualizedROR: PropTypes.number,
 };
 
 const mapStateToProps = (state) => ({

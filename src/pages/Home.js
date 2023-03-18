@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <div>
       <h1>Home Page</h1>
-      <MyForm/>
-      <ResultComponent/>
+      <MyForm />
+      <ResultComponent />
     </div>
   );
 };

@@ -1,8 +1,15 @@
 // CustomInput.js
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import './styles.css';
 
-const CustomInput = ({ field, form: { touched, errors },label, placeholder, ...props }) => {
+const CustomInput = ({
+  field,
+  form: { touched, errors },
+  label,
+  placeholder,
+  ...props
+}) => {
   const [isFocused, setIsFocused] = useState(false);
   const [isFilled, setIsFilled] = useState(false);
 
@@ -22,7 +29,9 @@ const CustomInput = ({ field, form: { touched, errors },label, placeholder, ...p
     <div className="input-wrapper">
       {label && (
         <label
-          className={`floating-label ${isFocused || isFilled ? 'active' : ''} ${isError ? 'error' : ''}`}
+          className={`floating-label ${isFocused || isFilled ? 'active' : ''} ${
+            isError ? 'error' : ''
+          }`}
           htmlFor={props.id || props.name}
         >
           {label}
@@ -38,6 +47,18 @@ const CustomInput = ({ field, form: { touched, errors },label, placeholder, ...p
       {isError && <div className="error-message">{errors[field.name]}</div>}
     </div>
   );
+};
+
+CustomInput.propTypes = {
+  field: PropTypes.object.isRequired,
+  form: PropTypes.shape({
+    touched: PropTypes.object.isRequired,
+    errors: PropTypes.object.isRequired,
+  }).isRequired,
+  label: PropTypes.string,
+  placeholder: PropTypes.string,
+  id: PropTypes.string,
+  name: PropTypes.string,
 };
 
 export default CustomInput;

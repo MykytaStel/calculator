@@ -1,5 +1,6 @@
 import React from 'react';
-import "./styles.css";
+import PropTypes from 'prop-types';
+import './styles.css';
 
 const Button = ({ title, ...props }) => {
   return (
@@ -10,3 +11,7 @@ const Button = ({ title, ...props }) => {
 };
 
 export default Button;
+
+Button.propTypes = {
+  title: PropTypes.string.isRequired,
+};

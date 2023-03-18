@@ -6,13 +6,21 @@ const Header = () => {
     <header className="header">
       <div className="logo">
         {/* Replace with your desired icon */}
-        <span role="img" aria-label="logo">🔰</span>
+        <span role="img" aria-label="logo">
+          🔰
+        </span>
       </div>
       <nav className="nav">
         <ul className="nav-list">
-          <li className="nav-item"><a href="/">Home</a></li>
-          <li className="nav-item"><a href="/profile">Profile</a></li>
-          <li className="nav-item"><a href="/logout">Logout</a></li>
+          <li className="nav-item">
+            <a href="/">Home</a>
+          </li>
+          <li className="nav-item">
+            <a href="/profile">Profile</a>
+          </li>
+          <li className="nav-item">
+            <a href="/logout">Logout</a>
+          </li>
         </ul>
       </nav>
     </header>

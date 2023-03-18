@@ -14,7 +14,7 @@ const Sidebar = () => {
     'ETF Edge Portfolio',
     'Slingshot Traders Playbook',
     'Trade of the Decade 2.0',
-    '10 for 10'
+    '10 for 10',
   ];
 
   return (

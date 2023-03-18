@@ -1,4 +1,4 @@
-import { UPDATE_STOCK_PRICE } from './actions';
+import { UPDATE_STOCK_PRICE } from '../actions';
 
 const initialState = {
   stockPrice: '',

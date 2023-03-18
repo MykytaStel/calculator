@@ -13,7 +13,7 @@ const CustomForm = () => {
         input5: '',
         input6: '',
         input7: '',
-        input8: ''
+        input8: '',
       }}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {

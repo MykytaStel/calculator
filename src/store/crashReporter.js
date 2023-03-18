@@ -1,5 +1,4 @@
-
-const crashReporter = (store) => (next) => (action) => {
+const crashReporter = () => (next) => (action) => {
   try {
     return next(action);
   } catch (err) {

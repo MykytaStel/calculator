@@ -3,12 +3,11 @@ import formDataReducer from '../store/formatDataSlice';
 import crashReporter from '../store/crashReporter';
 import logger from '../store/logger';
 
-
 const store = configureStore({
   reducer: {
     formData: formDataReducer,
   },
-    middleware: (getDefaultMiddleware) =>
+  middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(crashReporter, logger),
 });
 
