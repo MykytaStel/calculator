@@ -36,9 +36,11 @@ module.exports = {
     new MiniCssExtractPlugin(),
   ],
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
     compress: true,
-    port: process.env.PORT || 3000,
+    port: 3000,
     historyApiFallback: true,
   },
 };
