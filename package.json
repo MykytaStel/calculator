@@ -1,7 +1,10 @@
 {
-  "name": "my-app",
+  "name": "steadycalculator",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "19.6.0"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "@reduxjs/toolkit": "^1.9.3",
