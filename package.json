@@ -21,20 +21,18 @@
     "react-scripts": "^5.0.1",
     "redux": "^4.2.1",
     "web-vitals": "^3.3.0",
-    "webpack": "^5.76.2",
     "yup": "^1.0.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "webpack serve",
+    "build": "webpack",
+    "heroku-prebuild": "npm install --dev",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "lint": "eslint --ext .js,.jsx src",
-    "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "heroku-prebuild": "npm install --dev",
-    "heroku-postbuild": "npm install && npm run build"
+    "format": "prettier --write \"src/**/*.{js,jsx}\""
   },
   "eslintConfig": {
     "extends": [
@@ -76,11 +74,14 @@
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "dotenv-webpack": "^8.0.1",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
+    "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
     "mini-css-extract-plugin": "^2.7.5",
@@ -89,6 +90,7 @@
     "postcss-loader": "^4.3.0",
     "prettier": "^2.8.4",
     "prop-types": "^15.8.1",
+    "webpack": "^5.76.2",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.1",
     "workbox-webpack-plugin": "^6.5.4"
