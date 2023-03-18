@@ -25,10 +25,6 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
-      },
-      {
-        test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
     ],
@@ -39,7 +35,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new DotenvWebpack(),
-    new MiniCssExtractPlugin(),
+    // new MiniCssExtractPlugin(),
   ],
   devServer: {
     static: {
