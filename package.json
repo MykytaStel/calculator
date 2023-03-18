@@ -22,7 +22,7 @@
     "yup": "^1.0.2",
     "acorn": "^8.0.0",
     "eslint-plugin-flowtype": "^8.0.3",
-    "webpack": "^5.76.2",
+    "webpack": "^4.28.3",
     "webpack-cli": "^5.0.1"
   },
   "scripts": {
