@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const DotenvWebpack = require('dotenv-webpack');
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
@@ -35,6 +36,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new DotenvWebpack(),
+    new BundleAnalyzerPlugin(),
     // new MiniCssExtractPlugin(),
   ],
   devServer: {
