@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4014a00c4be6be06a11a",
+    "revision": "cc98366fc697dbe07bf5",
     "url": "/calculator/static/css/main.186356d3.chunk.css"
   },
   {
-    "revision": "4014a00c4be6be06a11a",
-    "url": "/calculator/static/js/main.18483f84.chunk.js"
+    "revision": "cc98366fc697dbe07bf5",
+    "url": "/calculator/static/js/main.0b944240.chunk.js"
   },
   {
     "revision": "2fe8cbdbbea1fbf116e6",
@@ -32,23 +32,23 @@ self.__precacheManifest = [
     "url": "/calculator/static/media/BwModelica-Light.2db8e759.woff2"
   },
   {
-    "revision": "c7110776e4194724be80529214bfb2d2",
-    "url": "/calculator/static/media/BwModelica-Regular.c7110776.woff2"
-  },
-  {
-    "revision": "54608e1eb860ba4972e010e5b5ccfbe3",
-    "url": "/calculator/static/media/BwModelica-Medium.54608e1e.woff2"
-  },
-  {
     "revision": "7d6313d3ead8f28de1ee30d6f7ddb6aa",
     "url": "/calculator/static/media/BwModelica-Light.7d6313d3.woff"
+  },
+  {
+    "revision": "c7110776e4194724be80529214bfb2d2",
+    "url": "/calculator/static/media/BwModelica-Regular.c7110776.woff2"
   },
   {
     "revision": "6aff4180a20995e0ea206ff7c93cf3a4",
     "url": "/calculator/static/media/BwModelica-Medium.6aff4180.woff"
   },
   {
-    "revision": "692c681777e275fa70932d551d404056",
+    "revision": "54608e1eb860ba4972e010e5b5ccfbe3",
+    "url": "/calculator/static/media/BwModelica-Medium.54608e1e.woff2"
+  },
+  {
+    "revision": "8dce67481b53782686037f84b0b0fd4b",
     "url": "/calculator/index.html"
   }
 ];
